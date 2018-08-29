@@ -36,9 +36,3 @@ class DoubanSpiderSpider(scrapy.Spider):
             yield scrapy.Request('https://movie.douban.com/top250'+next_link, callback=self.parse)
 
 
-        '''
-        .//*[@id='content']/div/div[1]/ol/li[1]/div/div[2]/div[1]/a/span[1]
-        .//div[@class='info']/div[@class='bd']/div[@class='star']/span[2]
-        /html/body/div[8]/div/div[2]/div[1]/div[2]/div/div[4]/div[5]/div/div/a[8]
-        '''
-

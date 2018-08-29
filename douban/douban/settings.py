@@ -55,8 +55,8 @@ DOWNLOAD_DELAY = 1
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
    # 'douban.middlewares.DoubanDownloaderMiddleware': 543,
-   'douban.middlewares.my_proxy': 543,
-   'douban.middlewares.my_useragent': 545,
+   # 'douban.middlewares.my_proxy': 543,
+   # 'douban.middlewares.my_useragent': 545,
 }
 
 # Enable or disable extensions

@@ -1,0 +1,126 @@
+2018-08-17 09:02:58 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: tx2)
+2018-08-17 09:02:58 [scrapy.utils.log] INFO: Versions: lxml 4.2.3.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-7-6.1.7601-SP1
+2018-08-17 09:02:58 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'tx2', 'LOG_FILE': 'tencent.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'tx2.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['tx2.spiders']}
+2018-08-17 09:02:58 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-08-17 09:02:59 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-08-17 09:02:59 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-08-17 09:02:59 [scrapy.middleware] INFO: Enabled item pipelines:
+['tx2.pipelines.TencentPipeline']
+2018-08-17 09:02:59 [scrapy.core.engine] INFO: Spider opened
+2018-08-17 09:02:59 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-17 09:03:05 [scrapy.core.scraper] ERROR: Error processing {'category': '产品/项目类',
+ 'job_titile': 'WXG08-211\xa0微信搜一搜产品策划（广州）',
+ 'link': 'https://hr.tencent.com/position_detail.php?id=43129&keywords=&tid=0&lid=0',
+ 'number': '1',
+ 'place': '广州',
+ 'time': '2018-08-17'}
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\PycharmProjects\scrapy\tx2\tx2\pipelines.py", line 16, in process_item
+    self.filename.write(text)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xa0' in position 25: illegal multibyte sequence
+2018-08-17 09:03:22 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: tx2)
+2018-08-17 09:03:22 [scrapy.utils.log] INFO: Versions: lxml 4.2.3.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-7-6.1.7601-SP1
+2018-08-17 09:03:22 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'tx2', 'LOG_FILE': 'tencent.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'tx2.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['tx2.spiders']}
+2018-08-17 09:03:22 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-08-17 09:03:22 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-08-17 09:03:22 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-08-17 09:03:22 [scrapy.middleware] INFO: Enabled item pipelines:
+['tx2.pipelines.TencentPipeline']
+2018-08-17 09:03:22 [scrapy.core.engine] INFO: Spider opened
+2018-08-17 09:03:22 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-17 09:03:27 [scrapy.core.scraper] ERROR: Error processing {'category': '产品/项目类',
+ 'job_titile': 'WXG08-211\xa0微信搜一搜产品策划（广州）',
+ 'link': 'https://hr.tencent.com/position_detail.php?id=43129&keywords=&tid=0&lid=0',
+ 'number': '1',
+ 'place': '广州',
+ 'time': '2018-08-17'}
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\PycharmProjects\scrapy\tx2\tx2\pipelines.py", line 16, in process_item
+    self.filename.write(text)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xa0' in position 25: illegal multibyte sequence
+2018-08-17 09:04:41 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: tx2)
+2018-08-17 09:04:41 [scrapy.utils.log] INFO: Versions: lxml 4.2.3.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-7-6.1.7601-SP1
+2018-08-17 09:04:41 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'tx2', 'LOG_FILE': 'tencent.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'tx2.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['tx2.spiders']}
+2018-08-17 09:04:41 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-08-17 09:04:42 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-08-17 09:04:42 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-08-17 09:04:42 [scrapy.middleware] INFO: Enabled item pipelines:
+['tx2.pipelines.TencentPipeline']
+2018-08-17 09:04:42 [scrapy.core.engine] INFO: Spider opened
+2018-08-17 09:04:42 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-17 09:04:46 [scrapy.core.scraper] ERROR: Error processing {'category': '产品/项目类',
+ 'job_titile': 'WXG08-211\xa0微信搜一搜产品策划（广州）',
+ 'link': 'https://hr.tencent.com/position_detail.php?id=43129&keywords=&tid=0&lid=0',
+ 'number': '1',
+ 'place': '广州',
+ 'time': '2018-08-17'}
+Traceback (most recent call last):
+  File "D:\Python\Python36\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\PycharmProjects\scrapy\tx2\tx2\pipelines.py", line 16, in process_item
+    self.filename.write(text)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xa0' in position 25: illegal multibyte sequence
